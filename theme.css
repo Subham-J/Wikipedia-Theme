@@ -622,9 +622,9 @@ body {
   --tab-curve: 0px; 
 }
 .workspace-tab-header-container, .workspace-ribbon.mod-left:before {
-  background-image: var(--tab-gradient);
-  background-position: left bottom;
-  background-repeat: repeat-x;
+  background-image: none;
+  background-position: unset;
+  background-repeat: unset;
 }
 
 
@@ -798,7 +798,7 @@ body {
 .theme-dark { 
   /* Tab colors */
   --tab-outline-color: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 55%);
-  --tab-gradient: linear-gradient(to top,var(--color-accent-2) 0px,  var(--color-accent-3) 0px, var(--background-primary) 100%);
+  --tab-gradient: none;
 
   /* Accents */
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 3.5%));
@@ -839,7 +839,7 @@ body {
 
     /* tabs */
   --tab-outline-color: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 40%);
-  --tab-gradient: linear-gradient(to top,var(--color-accent-2) 0px,  var(--color-accent-3) 0px, var(--background-primary) 100%);
+  --tab-gradient: none;
 
   /* accent colors */
   --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 2.5%));
