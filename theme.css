@@ -636,13 +636,18 @@ body {
 --indentation-guide-width: 0px;
 --nav-item-children-padding-left: 0px;
 }
-/* get rid of sidebar borders only */
+/* sidebar divider - exactly 1px black like tabs, single source to avoid double-thick */
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
-  border-right-style: solid;
-  border-right-width: 0px;
+  border: none !important;
+  border-right: none !important;
+  background: transparent !important;
 }
-.workspace-ribbon {
-  border-right: none;
+.workspace-split.mod-left-split {
+  border-right: 1px solid #000 !important;
+}
+.workspace-ribbon,
+.workspace-ribbon.mod-left {
+  border-right: 1px solid #000 !important;
 }
 
 /* Vault Name */
