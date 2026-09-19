@@ -963,6 +963,121 @@ body {
   justify-content: center;
   margin-top: 1em;
 }
+/* ---- Monochrome override: only white + black, keep blue links ---- */
+.theme-light {
+  --background-primary: #ffffff !important;
+  --background-primary-alt: #ffffff !important;
+  --background-secondary: #ffffff !important;
+  --background-secondary-alt: #ffffff !important;
+  --background-modifier-border: #000000 !important;
+  --background-modifier-border-hover: #000000 !important;
+  --background-modifier-border-focus: #000000 !important;
+  --background-modifier-hover: #ffffff !important;
+  --background-modifier-active-hover: #ffffff !important;
+  --background-modifier-form-field: #ffffff !important;
+  --background-modifier-success: #ffffff !important;
+  --background-modifier-error: #ffffff !important;
+  --text-normal: #000000 !important;
+  --text-muted: #000000 !important;
+  --text-faint: #000000 !important;
+  --text-on-accent: #ffffff !important;
+  --text-highlight-bg: #000000 !important;
+  --text-highlight-fg: #ffffff !important;
+  --text-selection: rgba(0, 0, 0, 0.2) !important;  --color-base-00: #ffffff !important;
+  --color-base-05: #ffffff !important;
+  --color-base-10: #ffffff !important;
+  --color-base-20: #ffffff !important;
+  --color-base-25: #ffffff !important;
+  --color-base-30: #000000 !important;
+  --color-base-35: #000000 !important;
+  --color-base-40: #000000 !important;
+  --color-base-50: #000000 !important;
+  --color-base-60: #000000 !important;
+  --color-base-70: #000000 !important;
+  --color-base-100: #000000 !important;
+  --h6-background: #ffffff !important;
+  --code-background: #ffffff !important;
+  --code-normal: #000000 !important;
+  --tag-background: #ffffff !important;
+  --tag-color: #000000 !important;
+  --tag-border-color: #000000 !important;
+  /* neutralize hues except links */
+  --color-red: #000000 !important;
+  --color-red-rgb: 0, 0, 0 !important;
+  --color-orange: #000000 !important;
+  --color-orange-rgb: 0, 0, 0 !important;
+  --color-yellow: #000000 !important;
+  --color-yellow-rgb: 0, 0, 0 !important;
+  --color-green: #000000 !important;
+  --color-green-rgb: 0, 0, 0 !important;
+  --color-cyan: #000000 !important;
+  --color-purple: #000000 !important;
+  --color-purple-rgb: 0, 0, 0 !important;
+  --color-pink: #000000 !important;
+  --color-pink-rgb: 0, 0, 0 !important;
+  --color-accent-1: #000000 !important;
+  --color-accent-2: #000000 !important;
+  --color-accent-3: #000000 !important;
+  --interactive-accent: #ffffff !important;
+  --interactive-accent-hover: #ffffff !important;
+  --text-on-accent: #000000 !important;
+  --checkbox-color: #000000 !important;
+  --checkbox-marker-color: #ffffff !important;
+  --checklist-done-color: #000000 !important;
+  --table-header-background: #ffffff !important;
+  --table-border-color: #000000 !important;
+  --hr-color: #000000 !important;
+  --icon-color: #000000 !important;
+  --icon-color-hover: #000000 !important;
+  --nav-collapse-icon-color: #000000 !important;
+  --nav-collapse-icon-color-collapsed: #000000 !important;
+  --ribbon-background: #ffffff !important;
+  --titlebar-background: #ffffff !important;
+  --tab-background-active: #ffffff !important;
+  --tab-text-color: #000000 !important;
+  /* callouts to B/W */
+  --callout-blink: 0, 0, 0 !important;
+  --callout-bug: 0, 0, 0 !important;
+  --callout-error: 0, 0, 0 !important;
+  --callout-example: 0, 0, 0 !important;
+  --callout-fail: 0, 0, 0 !important;
+  --callout-important: 0, 0, 0 !important;
+  --callout-info: 0, 0, 0 !important;
+  --callout-question: 0, 0, 0 !important;
+  --callout-success: 0, 0, 0 !important;
+  --callout-summary: 0, 0, 0 !important;
+  --callout-tip: 0, 0, 0 !important;
+  --callout-todo: 0, 0, 0 !important;
+  --callout-warning: 0, 0, 0 !important;
+  --callout-quote: 0, 0, 0 !important;
+  /* graph B/W */
+  --graph-node: #000000 !important;
+  --graph-line: #000000 !important;
+  --graph-text: #000000 !important;
+}
+/* links stay blue */
+.theme-light a,
+.theme-light .cm-hmd-internal-link,
+.theme-light .nav-file-title-content,
+.theme-light .markdown-rendered .internal-link {
+  color: var(--link-color) !important;
+}
+/* force all generic borders black, backgrounds white */
+.theme-light .workspace,
+.theme-light .workspace-split,
+.theme-light .workspace-leaf,
+.theme-light .view-content,
+.theme-light .markdown-preview-view,
+.theme-light .markdown-source-view {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+.theme-light callout,
+.theme-light .callout {
+  background-color: #ffffff !important;
+  border-color: #000000 !important;
+  color: #000000 !important;
+}
 
 
 
