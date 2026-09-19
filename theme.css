@@ -797,7 +797,7 @@ body {
 /* Dark Theme */
 .theme-dark { 
   /* Tab colors */
-  --tab-outline-color: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 55%);
+  --tab-outline-color: #000;
   --tab-gradient: none;
 
   /* Accents */
@@ -838,7 +838,7 @@ body {
   --link-external-color-hover: hsl(calc(var(--accent-h) + 10), var(--accent-s), calc(var(--accent-l) + 3%));
 
     /* tabs */
-  --tab-outline-color: hsl(calc(var(--accent-h) - 10), var(--accent-s), var(--accent-l), 40%);
+  --tab-outline-color: #000;
   --tab-gradient: none;
 
   /* accent colors */
