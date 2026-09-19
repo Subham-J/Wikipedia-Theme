@@ -650,6 +650,27 @@ body {
   border-right: 1px solid #000 !important;
 }
 
+/* remove grey highlight/box on active file - aggressive */
+body {
+  --nav-item-background-active: transparent !important;
+  --nav-item-background-selected: transparent !important;
+}
+.nav-file-title.is-active,
+.nav-folder-title.is-active,
+.nav-file-title.is-selected,
+.nav-folder-title.is-selected,
+.tree-item-self.is-active,
+.tree-item-self.is-selected,
+.tree-item.is-active > .tree-item-self,
+.workspace-leaf-content .nav-file-title.is-active {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  --background-modifier-hover: transparent !important;
+}
+
 /* Vault Name */
 /* outdated
 .nav-folder.mod-root > .nav-folder-title {
@@ -688,10 +709,10 @@ body {
 
 /* ----- Folders ----- */
 
-/* folder background color */
+/* folder background color - removed box */
 .nav-folder-children {
-  background-color: var(--background-secondary-alt);
-  padding: 5px;
+  background-color: transparent !important;
+  padding: 0 !important;
 }
 
 /* ----- Files ----- */
