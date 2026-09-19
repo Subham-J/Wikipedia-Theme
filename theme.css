@@ -1078,6 +1078,59 @@ body {
   border-color: #000000 !important;
   color: #000000 !important;
 }
+/* buttons: white bg, black text, black border - never solid black */
+.theme-light button:not(.clickable-icon),
+.theme-light .button,
+.theme-light .mod-cta,
+.theme-light input[type="submit"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  box-shadow: none !important;
+}
+/* sidebar icons: no boxes, plain black on white */
+.theme-light .workspace-ribbon button,
+.theme-light .workspace-ribbon .clickable-icon,
+.theme-light .workspace-ribbon .clickable-icon:hover,
+.theme-light .sidebar .clickable-icon,
+.theme-light .nav-header .clickable-icon,
+.theme-light .view-header .clickable-icon {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #000000 !important;
+}
+
+/* search / highlight matches: black bg white text, never black-on-black */
+.theme-light mark,
+.theme-light .suggestion-highlight,
+.theme-light .search-result-file-matched-text,
+.theme-light .community-theme-name .suggestion-highlight,
+.theme-light .is-selected mark {
+  background-color: #000000 !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-radius: 0 !important;
+}
+/* dropdowns/selects: white bg black text, never black box */
+.theme-light select,
+.theme-light .dropdown,
+.theme-light .setting-item-control select,
+.theme-light .combo_box,
+.theme-light [role="combobox"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  box-shadow: none !important;
+}
+.theme-light select option,
+.theme-light .dropdown option {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
 
 
 
